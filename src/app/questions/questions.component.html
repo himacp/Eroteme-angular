@@ -1,0 +1,96 @@
+<mat-card >
+  <mat-card-content class="example-card">
+   <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title class="style">
+      What do you mean by sports
+    </mat-card-title>
+      <mat-card-subtitle  class="font"><i class="material-icons md-48px ">
+          face</i>Answer</mat-card-subtitle>
+          <mat-checkbox class="example-margin" align="end" [(ngModel)]="checked">Accepted</mat-checkbox>
+        <p class="p"> Sport (British English) or sports (American English) includes all 
+          forms of competitive physical activity or games which, through casual or organised participation, aim to use, maintain or improve physical ability and skills while providing enjoyment to participants, and in some cases, entertainment for spectators... <button class="view" mat-button>View More</button></p>
+      <br>
+      <button id="b3" mat-raised-button color="basic" (click)="upvote1()">{{count2}}<i class="material-icons">thumb_up</i></button>
+      <button id="b4" mat-raised-button color="basic" (click)="downvote1()">{{count3}}<i class="material-icons">thumb_down</i></button>
+      <br>
+      <br>
+      <div style="background-color: ivory" width="100px" height="100px" >
+      <mat-form-field>
+       <!-- <input #newHero1 matInput placeholder="Enter the comments"
+            (keyup.enter)="addHero1(newHero1.value)"
+            (blur)="addHero1(newHero1.value); newHero1.value='' "> -->
+            <textarea #newHero1 matInput placeholder="Leave a comment" rows="1" cols="100"></textarea>
+     </mat-form-field>
+          <button class="buttonformats" mat-raised-button color="Basic"(click)="addHero1(newHero1.value);newHero1.value=''">Submit </button>
+          <ul><li *ngFor="let hero1 of heroes1">{{hero1}}
+              <!-- <input #data type="text" placeholder="Enter comments" (keyup.enter)="reply(data.value)"
+              (blur)="reply(data.value); data.value='' " > -->
+              <mat-form-field>
+              <textarea class="reply1" #data matInput placeholder="Leave a reply" rows="1" cols="100"></textarea>
+            </mat-form-field>
+              <button id="b6" (click)="reply(data.value); data.value=''"><i class="material-icons">reply</i></button>
+          
+          </li>
+          <ul>
+              <li *ngFor="let inner of InnerData">
+                  {{inner}}
+                  <mat-form-field>
+                    <textarea class="reply1" #data matInput placeholder="Leave a reply" rows="1" cols="100"></textarea>
+                  </mat-form-field>
+                  <!-- <input #data type="text" placeholder="Enter to reply" (keyup.enter)="reply(data.value)"
+              (blur)="reply(data.value); data.value='' " > -->
+            <button id="b6" (click)="reply(data.value); data.value=''"><i class="material-icons">reply</i></button>
+              </li>
+              
+            </ul>
+        </ul>
+</div>
+  <mat-card-subtitle class="font">
+    <i class="material-icons">face</i>Answer</mat-card-subtitle>
+      <mat-checkbox class="example-margin" [(ngModel)]="checked1">Accepted</mat-checkbox>
+          
+      <p class="p">
+  Sport (or sports) is all forms of usually competitive physical activity which, through casual or organised participation, aim to use, maintain or improve physical ability and skills while providing entertainment to participants, and in some cases, spectators................. <button class="view" mat-button>View More</button>
+</p>
+<br>
+<button id="b3" mat-raised-button color="basic" (click)="upvote2();">{{count4}}<i class="material-icons">thumb_up</i></button>
+<button id="b4" mat-raised-button color="basic" (click)="downvote2()">{{count5}}<i class="material-icons">thumb_down</i></button>
+
+<br>
+<br>
+
+<div style="background-color:ivory" width="60px" height="60px">
+  <mat-form-field>
+      <textarea #newHero matInput placeholder="Leave a comment" rows="1" cols="100"></textarea>
+    <!-- <input #newHero matInput placeholder="Enter the comments"
+      (keyup.enter)="addHero(newHero.value)"
+      (blur)="addHero(newHero.value); newHero.value='' "> -->
+    </mat-form-field>
+    <button class="buttonformats" mat-raised-button color="Basic"(click)="addHero(newHero.value);newHero.value=''">Submit </button>
+    <p class="inset"></p>
+    <ul><li *ngFor="let hero of heroes">{{hero}}
+      <mat-form-field>
+          <textarea class="reply1" #data1 matInput placeholder="Leave a reply" rows="1" cols="100"></textarea>
+      </mat-form-field>
+    <button id="b6" (click)="reply1(data1.value); data1.value=''"><i class="material-icons">reply</i></button></li>
+    <ul>
+      <li *ngFor="let inner1 of InnerData1">
+          {{inner1}}
+          <!-- <input #data1 type="text" placeholder="Enter comments" (keyup.enter)="reply1(data1.value)"
+      (blur)="reply1(data1.value); data1.value='' " > -->
+      <mat-form-field>
+          <textarea class="reply1" #data1 matInput placeholder="Leave a reply" rows="1" cols="100"></textarea>
+      </mat-form-field>
+    <button id="b6" (click)="reply1(data1.value);data1.value"><i class="material-icons">reply</i></button>
+      </li>
+      
+    </ul>
+    
+</ul>  
+
+ </div>
+
+</mat-card-content>
+</mat-card>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">

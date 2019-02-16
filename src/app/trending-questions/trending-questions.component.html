@@ -1,0 +1,24 @@
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+  </mat-card-header>
+  <img mat-card-image margin :auto height=120 width=120 src="../../assets/angular2.png" alt="">
+  <mat-card-content>
+    <h3>Which is the national game of India</h3>
+    <p>Hockey as our national game after fetching 8 gold medals in Olympics, 6 consecutive...</p>
+    <span></span>
+
+    <a routerLink="/register">viewmore</a>
+  </mat-card-content>
+   <mat-card-actions>
+    <button id="b1" mat-stroked-button color="primary" (click)="countFunc()">{{count}}<i class="material-icons">thumb_up</i></button>
+    <button id="b2" mat-stroked-button color="primary" (click)="countFunction()">{{downcount}}<i class="material-icons">thumb_down</i></button>
+   
+    <br>
+    <br>
+    <mat-form-field class="example-full-width">
+      <textarea matInput placeholder="Leave a comment"></textarea>
+    </mat-form-field>
+   </mat-card-actions> 
+</mat-card>

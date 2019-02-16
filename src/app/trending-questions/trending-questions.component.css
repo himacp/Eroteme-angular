@@ -1,0 +1,40 @@
+.example-card {
+  max-width: 350px;
+  margin : auto;
+  padding-top : 1%;
+  background-color: rgb(235, 240, 240);
+  height: 50000%;
+}
+.material-icons{
+  padding-left:10%;
+}
+#b2{
+  margin-left:10%;
+}
+#b1{
+  margin-left:10%;
+}
+
+.example-header-image {
+  background-image: url('src/assets/images.png');
+  background-size: cover;
+}
+.example-button-row button,
+.example-button-row a {
+margin-right: 8px;
+}
+mat-card{
+max-height: 520px;
+max-width: 200px;
+}
+img{
+max-height: 200px;
+max-width: 200px;
+padding-left: 30%;
+}
+span{
+padding-right: 70%;
+}
+.classname{
+min-height: 0px;
+}
