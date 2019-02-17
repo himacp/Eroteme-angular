@@ -1,3 +1,6 @@
+
+@media only screen and (min-width: 600px){
+
 .example-card {
   
     /* box-shadow: 0 -1px 2px #272020; */
@@ -51,7 +54,9 @@
   .style{
     color: black;
     font-style: unset;
+    font-weight: bolder;
     font-size: 2em;
+    
   }
   .view{
     margin-left: 80%;
@@ -90,3 +95,4 @@
   }
   .material-icons.md-48 { font-size: 48px; }
   .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+}
