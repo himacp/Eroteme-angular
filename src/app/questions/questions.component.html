@@ -6,18 +6,19 @@
     </mat-card-title>
 
     <!-- question description -->
-    <p class="dec">Description:Description of questions................................</p>
-      <mat-card-subtitle  class="font"><i class="material-icons md-48px ">
-          face</i>Answer</mat-card-subtitle>
+    <p class="dec">Description:  Description of questions................................</p>
+    <div mat-card-avatar class="image"></div> 
+      <mat-card-subtitle  class="font">Hima Chandrashekaraiah</mat-card-subtitle>
+    
           <mat-checkbox class="example-margin" align="end" [(ngModel)]="checked">Accepted</mat-checkbox>
         <p class="p"> Sport (British English) or sports (American English) includes all 
           forms of competitive physical activity or games which, through casual or organised participation, aim to use, maintain or improve physical ability and skills while providing enjoyment to participants, and in some cases, entertainment for spectators... <button class="view" mat-button>View More</button></p>
       <br>
-      <button id="b3" mat-mini-fab color="primary" (click)="upvote1()">{{count2}}<i class="material-icons">thumb_up</i></button>
-      <button id="b4" mat-mini-fab color="warn" (click)="downvote1()">{{count3}}<i class="material-icons">thumb_down</i></button>
+      <button id="b3" mat-mini-fab color="primary" (click)="upvote1()">{{count1}}<i class="material-icons">thumb_up</i></button>
+      <button id="b4" mat-mini-fab color="warn" (click)="downvote1()">{{count2}}<i class="material-icons">thumb_down</i></button>
       <br>
       <br>
-      <div style="background-color: ivory" width="100px" height="100px" >
+      <div style="background-color:honeydew" width="100px" height="100px" >
       <mat-form-field>
             <textarea #newHero1 matInput placeholder="Leave a comment" rows="1" cols="100"></textarea>
      </mat-form-field>
@@ -28,8 +29,8 @@
         <textarea class="reply1" #data matInput placeholder="Leave a reply" rows="1" cols="100"></textarea>
       </mat-form-field>
             <button id="b6" (click)="reply(data.value); data.value=''"><i class="material-icons">reply</i></button>  {{time}}
-            <button id="b4" mat-mini-fab color="primary" (click)="downvote1()">{{count3}}<i class="material-icons">thumb_down</i></button>
-            <button id="b4" mat-mini-fab color="warn" (click)="downvote1()">{{count2}}<i class="material-icons">thumb_up</i></button>
+            <button id="b4" mat-mini-fab color="primary" (click)="upvote2()">{{count3}}<i class="material-icons">thumb_down</i></button>
+            <button id="b4" mat-mini-fab color="warn" (click)="downvote2()">{{count4}}<i class="material-icons">thumb_up</i></button>
       </li>
           <ul>
               <li *ngFor="let inner of InnerData">
@@ -38,26 +39,38 @@
          <textarea class="reply1" #data matInput placeholder="Leave a reply" rows="1" cols="100"></textarea>
       </mat-form-field>
          <button id="b6" (click)="reply(data.value); data.value=''"><i class="material-icons">reply</i></button> {{time}}
-          <button id="b4" mat-mini-fab color="primary" (click)="downvote1()">{{count3}}<i class="material-icons">thumb_down</i></button>
-          <button id="b4" mat-mini-fab color="warn" (click)="downvote1()">{{count2}}<i class="material-icons">thumb_up</i></button>
+          <button id="b4" mat-mini-fab color="primary" (click)="upvote3()">{{count5}}<i class="material-icons">thumb_down</i></button>
+          <button id="b4" mat-mini-fab color="warn" (click)="downvote3()">{{count6}}<i class="material-icons">thumb_up</i></button>
       </li>
+
+
+
+
+
+
+
+
+
+
+
           </ul>
         </ul>
        </div>
         <br>
-     <mat-card-subtitle class="font">
-        <i class="material-icons">face</i>Answer</mat-card-subtitle>
+        <div mat-card-avatar class="image"></div> 
+        <mat-card-subtitle  class="font">Shalini-Ganesh</mat-card-subtitle>
+      
           <mat-checkbox class="example-margin" [(ngModel)]="checked1">Accepted</mat-checkbox>
           <p class="p">
       Sport (or sports) is all forms of usually competitive physical activity which, through casual or organised participation, aim to use, maintain or improve physical ability and skills while providing entertainment to participants, and in some cases, spectators................. <button class="view" mat-button>View More</button>
           </p>
         <br>
-      <button id="b3" mat-mini-fab color="primary" (click)="upvote2();">{{count4}}<i class="material-icons">thumb_up</i></button>
-      <button id="b4" mat-mini-fab color="warn" (click)="downvote2()">{{count5}}<i class="material-icons">thumb_down</i></button>
+      <button id="b3" mat-mini-fab color="primary" (click)="upvote4();">{{count7}}<i class="material-icons">thumb_up</i></button>
+      <button id="b4" mat-mini-fab color="warn" (click)="downvote4()">{{count8}}<i class="material-icons">thumb_down</i></button>
       <br>
       <br>
 
-      <div style="background-color:ivory" width="60px" height="60px">
+      <div style="background-color:honeydew" width="60px" height="60px">
    <mat-form-field>
       <textarea #newHero matInput placeholder="Leave a comment" rows="1" cols="100"></textarea>
     </mat-form-field>
@@ -68,8 +81,8 @@
           <textarea class="reply1" #data1 matInput placeholder="Leave a reply" rows="1" cols="100"></textarea>
       </mat-form-field>
     <button id="b6" (click)="reply1(data1.value); data1.value=''"><i class="material-icons">reply</i></button> {{time}}
-    <button id="b4" mat-mini-fab color="primary" (click)="downvote1()">{{count3}}<i class="material-icons">thumb_down</i></button>
-    <button id="b4" mat-mini-fab color="warn" (click)="downvote1()">{{count2}}<i class="material-icons">thumb_up</i></button>
+    <button id="b4" mat-mini-fab color="primary" (click)="upvote5()">{{count9}}<i class="material-icons">thumb_down</i></button>
+    <button id="b4" mat-mini-fab color="warn" (click)="downvote5()">{{count}}<i class="material-icons">thumb_up</i></button>
     <ul>
       <li *ngFor="let inner1 of InnerData1">
           {{inner1}}
@@ -77,7 +90,7 @@
         <textarea class="reply1" #data1 matInput placeholder="Leave a reply" rows="1" cols="100"></textarea>
       </mat-form-field>
     <button id="b6" (click)="reply1(data1.value);data1.value"><i class="material-icons">reply</i></button>{{time}}
-    <button id="b4" mat-mini-fab color="primary" (click)="downvote1()">{{count3}}<i class="material-icons">thumb_down</i></button>
+    <button id="b4" mat-mini-fab color="primary" (click)="upvote1()">{{count1}}<i class="material-icons">thumb_down</i></button>
     <button id="b4" mat-mini-fab color="warn" (click)="downvote1()">{{count2}}<i class="material-icons">thumb_up</i></button>
       </li>
     </ul>

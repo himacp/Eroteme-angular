@@ -14,9 +14,14 @@
   .example-header-image {
     background-image: url('src/assets/img.jpeg');
     background-size: cover;
-     margin-left:1%; 
+     /* margin-left:1%;  */
     width: 80px;
     height: 100px;
+  }
+  .image{
+    background-image: url(src/assets/profile.png);
+    background-size: cover;
+  border-radius: 90%;
   }
   .buttonformats{
     background-color: whitesmoke;
