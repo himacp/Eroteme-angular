@@ -12,6 +12,7 @@ export class QuestionsComponent implements OnInit
   public count3 : number= 0; 
   public count4 : number= 0; 
   public count5 : number= 0; 
+  public time = "12/09/2018";
   checked = false;
   checked1 = false;
   constructor() { }

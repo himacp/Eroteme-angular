@@ -1,7 +1,7 @@
 .example-card {
   
-    box-shadow: 0 -1px 2px #272020;
-    margin: auto;
+    /* box-shadow: 0 -1px 2px #272020; */
+    /* margin: auto; */
     background-color: white;
   }
   
@@ -14,8 +14,7 @@
   .example-header-image {
     background-image: url('src/assets/img.jpeg');
     background-size: cover;
-    margin-left:5%;
-    margin-top: 40%;
+     margin-left:1%; 
     width: 80px;
     height: 100px;
   }
@@ -57,6 +56,12 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
   }
+  .dec{
+    text-align: center;
+    font: bold;
+    color: black;
+    font-size: 1.2em;
+  }
   .p{
     font-size: 16px;
     color: black;
@@ -73,7 +78,7 @@
      margin: 0 1px; 
     align-items: flex-end;
     color: green;
-    margin-left:35em;
+    margin-left:80em;
   }
   ::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-accent .mat-pseudo-checkbox-checked, .mat-accent .mat-pseudo-checkbox-indeterminate, .mat-pseudo-checkbox-checked, .mat-pseudo-checkbox-indeterminate {
     background-color: green !important; /* Red background for example */
