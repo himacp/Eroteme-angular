@@ -22,6 +22,8 @@ export class QuestionsComponent implements OnInit
   public time = "18/02/2018";
   checked = false;
   checked1 = false;
+
+  
   constructor() { }
   
   upvote1(){
