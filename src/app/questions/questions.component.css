@@ -1,11 +1,8 @@
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 1000px){
 
 .example-card {
-  
-    /* box-shadow: 0 -1px 2px #272020; */
-    /* margin: auto; */
-    background-color: white;
+  background-color: white;
   }
   
   .mat-card-title{
@@ -17,7 +14,6 @@
   .example-header-image {
     background-image: url('src/assets/img.jpeg');
     background-size: cover;
-     /* margin-left:1%;  */
     width: 80px;
     height: 100px;
   }
